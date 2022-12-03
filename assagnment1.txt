@@ -1,0 +1,80 @@
+1. In the below elements which of them are values or an expression? eg:- values can be
+integer or string and expressions will be mathematical operators.
+answer:
+* is an expression
+hello is a value
+-87.8 is a value
+- is an expression
+/ is an expression
++ is an expression
+
+2. What is the difference between string and variable?
+answer:
+
+string: String is a data type in python. String is a sequence of characters. 
+        In pytho we have str() method to conevrt a value to string
+ 
+variable: A avrable is name given to a memory location to store the values.
+
+3. Describe three different data types.
+answer:
+
+integer: It is a built in data type in python which specifies the integer values.
+
+String:String is a data type in python. String is a sequence of characters. 
+        In pytho we have str() method to conevrt a value to string
+
+Flaot:It is a built in data type in python which specifies the integer values which has floating points.
+
+boolean: Pyhton has two Boolean operators i.e., True and False.
+
+4. What is an expression made up of? What do all expressions do?
+answer:
+ An expression is made up of operators and operands.
+ All expressions will perform mathmatical and logical operations
+
+5. This assignment statements, like spam = 10. What is the difference between an
+expression and a statement?
+answer:
+ Expresion: An expression is a combination of both operators and operands.
+ 
+ statement:
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+
+answer:
+    bacon=23
+
+7. What should the values of the following two terms be?
+
+'spam'+'spamspam'
+'spam'*3
+  
+answer:
+  Both are same
+
+8. Why is eggs a valid variable name while 100 is invalid?
+answer:
+ eggs:It obeys al the rules of the variables, so it is valid.
+ 
+ 100: it is not valid, because a variable does not start with integer.
+
+9. What three functions can be used to get the integer, floating-point number, or string
+version of a value?
+
+answer:
+ integer: int()
+ Float: float()
+ string: str()
+
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten'+ 99 +'burritos'
+
+answer:
+ it is raising an error due to stirng is concatenating with integer.
+ correct method is-- 'I have eaten'+ '99' +'burritos'
+
+
+
