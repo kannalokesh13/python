@@ -1,0 +1,59 @@
+1.Why are functions advantageous to have in your programs?
+answer:
+* Functions make large program understandable.
+* functions divides the large program to small pieces of code and make easy to understand.
+
+2.When does the code in a function run: when it's specified or when it's called?
+answer:
+ The code in the function is executed when it is called not when it is defined.
+
+3.What statement creates a function?
+answer:
+ The keyword "def" is used before the name of the function, which indicates a function declaration along with set of paranthesis.
+ Ex: def func()
+
+4.What is the difference between a function and a function call?
+answer:
+* A function is contains a code which is executed when it is invoked.
+* A function call used to execute the code inside the function.
+
+5.How many global scopes are there in a Python program? How many local scopes?
+answer:
+* Only one global scope.
+* Only one local scope.
+
+6.What happens to variables in a local scope when the function call returns?
+answer:
+ The life span of local varaibles will expire when function call returns.
+
+7.What is the concept of a return value? Is it possible to have a return value in an expression?
+answer:
+ The concept of returining a value indicates the output returned by the function. yes it is possible to return a value in an expression.
+
+8.If a function does not have a return statement, what is the return value of a call to that function?
+answer:
+ If a function does not have a return statement, then it will implicitly returns a defualt value.
+
+9.How do you make a function variable refer to the global variable?
+answer:
+ With the help of "global" keyword specified before the function variable.
+
+10.What is the data type of None?
+answer:
+ It has own data type of NoneType.
+
+11.What does the sentence import areallyourpetsnamederic do?
+answer:
+ The import statement basically imports the areallyourpetsnamederic module.
+
+12.If you had a bacon() feature in a spam module, what would you call it after importing spam?
+answer:
+ After importing a module called spam, to use the bacon() function, you need to write this statement "spam.bacon()".
+
+13.What can you do to save a programme from crashing if it encounters an error?
+answer:
+ Use some statements like break,continue,pass.
+
+14.What is the purpose of the try clause? What is the purpose of the except clause?
+answer:
+ The try clause will be used to execute the code, but if any error encountered, then the program control flow goes to the Except clause.
