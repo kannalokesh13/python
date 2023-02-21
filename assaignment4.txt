@@ -1,0 +1,83 @@
+1. What exactly is []?
+answer:
+ The "[]" indicates list data type in python.
+
+2.In a list of values stored in a variable called spam, how would you assign the value "hello" as the
+third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+answer:
+ spam[2]="hello"
+
+Let's pretend the spam includes the list ['a','b','c','d'] for  the next three queries.
+
+3.What is the value of spam[int(int('3'* 2) / 11)]?
+answer:
+ 'd'.
+
+4.What is the value of spam[-1]?
+answer:
+ 'd'.
+
+5.What is the value of spam[:2]?
+answer:
+ ['a','b']
+
+Let's pretend bacon has the list[3.14,'cat',11,'cat',True] for the next three questions.
+
+6.What is the value of bacon.index['cat']?
+answer:
+ 1.
+
+7.How does bacon.append(99) change the look of the list value in bacon?
+answer:
+ [3.14,'cat',11,'cat',True,99]
+
+8.How does bacon.remove('cat') change the look of the list in bacon?
+answer:
+ [3.14,11,'cat',True,99]
+
+9.What are the list concatenation and list replication operators?
+answer:
+ '+' is the concatenation operator.
+ '*' is the replication operator.
+
+10.What is difference between the list methods append() and insert()?
+answer:
+ The append() method will be used to add the element at the end of the list and
+ the insert() method will be used to add the element at the desired position in a list.
+
+11.What are the two methods for removing items from a list?
+answer:
+ If "lst" is the list ,then lst.remove() and lst.pop().
+
+12.Describe how list values and string values are identical.
+answer:
+ Both the list values and string values are sequences, but the list is mutable and the string is immutable.
+
+13.What's the difference between tuples and lists?
+answer:
+ The tuples are immutable and the lists are mutable.
+
+14.How do you type a tuple value that only contains the integer 42?
+answer:
+ tuple=(42,)
+
+15.How do you get a list value's tuple form? How do you get a tuple value's list form?
+answer:
+ To get the list value's in tuple form use this statement "list(tuple)".
+ To get the tuple value's in list form use this statement "tuple(list)".
+
+16.Variables that "contain" list values are not necessarily lists themselves. Instead, what do they
+contain?
+answer:
+ Variables containing the reference of the list of values.
+
+17.How do you distinguish between copy.copy() and copy.deepcopy()?
+answer:
+ copy.copy() does not generates new duplicate of a original one, if the data in duplicate changes, then the data in 
+ original copy also changes.
+ But, copy.deepcopy() generates new duplicate of a original one, if the data in duplicate changes, then the data in 
+ original copy does not changes. 
+ 
+ 
+ 
+
