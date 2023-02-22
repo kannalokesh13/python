@@ -1,0 +1,60 @@
+1. What are escape characters, and how do you use them?
+answer:
+ Escape characters are used to insert characters which are lligal to add in a string.
+
+2.What do the escape characters n and t stand for?
+answer:
+ \n will be used for newline.
+ \t will be used for one tab space.
+
+3.What is the way to include backslash characters in a string?
+answer:
+ For example if i have the string, str="hello world", then we use str="hello \\world", then it will give the output as "hello \world".
+
+4.The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the
+word Howl's not escaped a problem?
+answer:
+ You have to use this "How\'s Moving Castle" instead of this "Howl's Moving Castle", then it will be correct.
+
+5.How do you write a string of newlines if you don&#39;t want to use the n character?
+answer:
+ By using another print statement.
+
+6.What are the values of the given expressions?
+'Hello, world!'[1]
+'Hello, world!'[0:5]
+'Hello, world!'[:5]
+'Hello, world!'[3:]
+answer:
+ 'Hello, world!'[1]->'e'
+ 'Hello, world!'[0:5]->'Hello'
+ 'Hello, world!'[:5]->'Hello'
+ 'Hello, world!'[3:]->'lo, world!'
+
+7.What are the values of the following expressions?
+'Hello'.upper()
+'Hello'.upper().isupper()
+'Hello'.upper().lower()
+answer:
+ 'Hello'.upper()->'HELLO'
+ 'Hello'.upper().isupper()->True
+ 'Hello'.upper().lower()->False
+
+8.What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+'-'.join('There can only one.'.split())
+answer:
+ 'Remember, remember, the fifth of July.'.split()->['Remember','remember','the','fifth','of','November']
+ '-'.join('There can only one.'.split())->'There-can-only-one.'
+
+9.What are the methods for right-justifying, left-justifying, and centering a string?
+answer:
+ right-justifying->rjust()
+ left-justifying->ljust()
+ centering->center()
+
+10. What is the best way to remove whitespace characters from the start or end?
+answer:
+ lstrip() and rstrip() will be used to remove the whitespace characters from the start or end.
+
+ 
