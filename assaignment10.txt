@@ -1,0 +1,108 @@
+1. What does one mean by the term "machine learning"?
+ans:
+Machine Learning is the field of study that gives computers the capability to learn without being explicitly programmed.
+ ML is one of the most exciting technologies that one would have ever come across. As it is evident from the name, 
+it gives the computer that makes it more similar to humans: The ability to learn.
+ Machine learning is actively being used today, perhaps in many more places than one would expect.
+
+2.Can you think of 4 distinct types of issues where it shines?
+ans:
+1.spam classifier
+2.anomoly detection
+3.wine quality prediction
+4.online deliery time prediction
+
+3.What is a labeled training set, and how does it work?
+ans:
+The labelled dataset is a well organised data dataset which is used for training machine learning model.
+
+4.What are the two most important tasks that are supervised?
+ans:
+1.Regression
+2.Cassification
+
+5.Can you think of four examples of unsupervised tasks?
+ans:
+1.customer segmentation
+2.spam messages clustering
+3.product segmentation
+4.recommendation system
+
+6.State the machine learning model that would be best to make a robot walk through various
+unfamiliar terrains?
+ans:
+ The machine learning model that would be best to make a robot walk through various unfamiliar terrains is reinforcement learning.
+
+7.Which algorithm will you use to divide your customers into different groups?
+ans: Unsupervised algorithms like clustering such as KMeans,heirarchical clustering etc.
+
+8.Will you consider the problem of spam detection to be a supervised or unsupervised learning
+problem?
+ans: The spam detection or classification is the task of supervised learning and the spam message clustering is unsupervised machine learning.
+
+9.What is the concept of an online learning system?
+ans:
+Online learning is a common technique used in areas of machine learning where it is computationally infeasible to train over the entire dataset, 
+requiring the need of out-of-core algorithms. It is also used in situations where it is necessary for the algorithm to dynamically adapt to new 
+patterns in the data, or when the data itself is generated as a function of time, e.g., stock price prediction.
+
+10.What is out-of-core learning, and how does it differ from core learning?
+ans:
+It is a way to train your model on data that cannot fit your core memory.
+Out-of-core learning refers to the machine learning algorithms working with data that cannot fit into a single machine's 
+memory but can easily fit into some data storage, such as a local hard disk or web repository.
+
+11.What kind of learning algorithm makes predictions using a similarity measure?
+ans:
+The best example of learning algorithm makes predictions using similarity measure is Recommendation System.
+
+12.What's the difference between a model parameter and a hyperparameter in a learning
+algorithm?
+ans:
+model parameter:
+       The parameters that are passed to train the model,but not results the optimal output.
+hyperparameter:
+       The parameters that brings the optimal results of a model.
+
+13.What are the criteria that model-based learning algorithms look for? What is the most popular
+method they use to achieve success? What method do they use to make predictions?
+ans:
+1.Accuracy:
+      The model should accurately capture the patterns and relationships in the input data.
+2.Generalizability: 
+      The model should be able to make accurate predictions on new, unseen data, not just the data it was trained on.
+
+14.Can you name four of the most important Machine Learning challenges?
+ans:
+1.Spam Classification
+2.Reommendation System
+3.Web Traffic Analysis
+4.Future Pediction
+
+15.What happens if the model performs well on the training data but fails to generalize the results
+to new situations? Can you think of three different options?
+ans:
+ If the Model Fails to generalize the results to new situations, then the condition is overfitting.
+    that model only gives the accuracy for the training data, but the accuracy is less for the testing data.
+
+16.What exactly is a test set, and why would you need one?
+ans:
+ The Test set is the Completely unknown dataset.
+ The Test set is used to find the accuracy of the model.
+
+17.What is a validation set's purpose?
+ans:
+ The purpose of the validaion set is to train the model on the unknown dataset.
+
+18.What precisely is the train-dev kit, when will you need it, how do you put it to use?
+ans:
+ Train-Dev kit:
+     The train-dev kit, also known as the development set, is a subset of the training data used in machine learning 
+     that is reserved for evaluating and fine-tuning the performance of the model during the development phase.
+     It will be needed while training the data.
+     It will be used in Hyperparameter tuning, model selection etc.
+
+19.What could go wrong if you use the test set to tune hyperparameters?
+ans:
+   If you use the test set for hyperparametre tuning, then the model is said to be trained, so it is not going to be test set.
+
