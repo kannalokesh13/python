@@ -1,0 +1,108 @@
+1. What is the function of a summation junction of a neuron? What is threshold activation
+function?
+ans:
+ The summation Junction of a neuron consists of weighted sum pf previous layer and the actvation function applied to the result.
+ The threshold activation function is used for binary classification, if value is greater than threshold, then it should be one otherwise
+ it should be zero.
+
+2. What is a step function? What is the difference of step function with threshold function?
+ans:
+ The step function is used to make any value between the zero and one. The activation function will be used to activate the neurons in the hidden layers
+ The activation function will be used in ANN.
+
+3. Explain the McCulloch–Pitts model of neuron.
+ans:
+ The McCulloch-Pitts neuron model consists of two main components: input connections and an output function. The input connections represent the inputs
+ to the neuron, which are binary signals that can be either on or off. Each input is assigned a weight, which represents the strength of the input signal.
+ The output function takes the weighted sum of the input signals and compares it to a threshold value. If the weighted sum is greater than or equal to the 
+ threshold value, the neuron fires and produces an output signal; otherwise, it remains inactive and does not produce an output signal.
+
+4. Explain the ADALINE network model.
+ans:
+ The ADALINE (Adaptive Linear Neuron) network model is a type of artificial neural network where it consists of  an input layer, a single output layer, 
+ and a feedback loop that adjusts the network's weights based on the difference between the network's output and the desired output. The input layer consists
+ of a set of input neurons, each of which receives an input signal and applies a weight to it. The output layer consists of a single output neuron, which 
+ receives the weighted sum of the input signals and applies a linear activation function to produce the network's output.
+
+5. What is the constraint of a simple perceptron? Why it may fail with a real-world data set?
+ans:
+  The perceptron contains only a single layer of nuerons and it will acts like a linear regression problem statement and the parametrs are very less
+  to train the data. So it only trains the data which is only linearly identified. So That's is the reaso behind where it fails with a real-world data set.
+
+6. What is linearly inseparable problem? What is the role of the hidden layer?
+ans:
+  The data which is not in a linear manner, it means it we cannot draw a best fit line on above data.
+  The role of the hidden layer in a neural network is to enable the network to learn nonlinear relationships between the inputs and outputs.
+
+7. Explain XOR problem in case of a simple perceptron.
+ans:
+ The XOR problem cannot be solved using a single perceptron, it can be solved by using the multilayer perceptron(MLP).
+ Here, the inputs are x1 and x2 and the output is y1 and at the middle there is a new layer called hidden layer which process the outputs of x1 and x2.
+ Then the network will predict the output.
+
+8. Design a multi-layer perceptron to implement A XOR B.
+ans:
+ The Multi-layer percptron to implement A XOR B is,
+   Input layer: Two input nodes for A and B.
+
+   Hidden layer: Two nodes with sigmoid activation function.
+
+   Output layer: One node with sigmoid activation function.
+
+  By the above technique we will get the output/
+
+9. Explain the single-layer feed forward architecture of ANN.
+ans:
+ The Single-layer consists of input layer, one hidden layer and the output layer. The Input layer will be used to feed the input and the hidden layer 
+ will responsible for processing of outputs by taking the inpus. The single-layer networks works like linear regression formula along with a bias.
+ It randomly intializes the weights and proceeds further. It does not consists of back propagation to adjust their weights.
+
+10. Explain the competitive network architecture of ANN.
+ans:
+  The competative network contains more than one hidden layers and contains a number of parameters that are going to be trained on the input data, and
+  after that it begins back propogation algorithm to adjust their weights to increase the performance.
+
+11. Consider a multi-layer feed forward neural network. Enumerate and explain steps in the
+backpropagation algorithm used to train the network.
+ans:
+ It consists of a sequence of steps:
+   1.Initialize network weights
+   2.Forward pass
+   3.Compute error
+   4.Backward pass
+   5.Update weights
+   6.Repeat: Steps 2-5 are repeated for multiple epochs until the network converges to a set of weights that minimize the cost function. 
+
+12. What are the advantages and disadvantages of neural networks?
+ans:
+  Advantages:
+     1.Neural networks can be used for a wide range of applications, including image and speech recognition, natural language processing, and prediction tasks.
+     2.They can learn complex relationships and patterns in data without being explicitly programmed.
+     3.They can handle noisy and incomplete data.
+     4.They can learn and generalize from examples.
+  Dis-Advantages:
+     1.They can be computationally expensive to train and require a lot of computational resources.
+     2.They can be difficult to interpret and explain their decision-making process.
+     3.Overfitting can occur if the model is too complex and is not regularized properly.
+
+13. Write short notes on any two of the following:
+
+1. Biological neuron
+
+2. ReLU function
+ans:
+ReLU (Rectified Linear Unit) is a commonly used activation function in deep learning.
+f(x) = max(0, x)
+In other words, ReLU returns the input x if it is positive, and 0 otherwise. The main advantage of 
+using ReLU is that it is computationally efficient and easy to implement. Additionally, it has been shown to perform well in 
+many deep learning applications.
+
+3. Single-layer feed forward ANN
+
+4. Gradient descent
+ans:
+  Gradient Descent is an iterative optimization algorithm used in machine learning and deep learning to find the minimum value of a 
+  given function. The idea behind this algorithm is to iteratively adjust the parameters of a model in the direction of the negative gradient 
+  of the loss function with respect to the parameters, until the minimum is reached.
+
+5. Recurrent networks
