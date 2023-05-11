@@ -1,0 +1,57 @@
+1.How many seconds are in an hour? Use the interactive interpreter as a calculator and multiply the
+number of seconds in a minute (60) by the number of minutes in an hour (also 60).
+ans:
+ Each minute has 60 seconds.
+ Each hour has 60 minutes.
+ So, each hour has 60*60 = 3600 seconds.
+
+2. Assign the result from the previous task (seconds in an hour) to a variable called
+seconds_per_hour.
+ans:
+  seconds_per_hour = 3600
+
+3. How many seconds do you think there are in a day? Make use of the variables seconds per hour
+and minutes per hour.
+ans:
+  minutes_per_hour = 60
+  seconds_per_hour = 3600
+  no_of_hour_day = 24
+  no_of_seconds_day = 24*3600 = 86400
+
+4. Calculate seconds per day again, but this time save the result in a variable called seconds_per_day
+ans:
+  
+  minutes_per_hour = 60
+  seconds_per_hour = 3600
+  no_of_hour_day = 24
+  seconds_per_day = 24*3600 = 86400
+
+5. Divide seconds_per_day by seconds_per_hour. Use floating-point (/) division.
+ans:
+  res = seconds_per_day / seconds_per_hour
+  res = 24.0
+
+6. Divide seconds_per_day by seconds_per_hour, using integer (//) division. Did this number agree
+with the floating-point value from the previous question, aside from the final .0?
+ans:
+  res = seconds_per_day // seconds_per_hour
+  res = 24
+  
+7. Write a generator, genPrimes, that returns the sequence of prime numbers on successive calls to
+its next() method: 2, 3, 5, 7, 11, ...
+ans:
+ def genPrimes():
+    primes = []  # A list of prime numbers
+    n = 2  # First number to check for primality
+    while True:
+        is_prime = True
+        # Check if n is prime
+        for p in primes:
+            if n % p == 0:
+                is_prime = False
+                break
+        if is_prime:
+            # n is prime, so add it to the list of primes
+            primes.append(n)
+            yield n
+        n += 1

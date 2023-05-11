@@ -1,0 +1,56 @@
+1. How do you distinguish between shutil.copy() and shutil.copytree()?
+ans:
+ shutil.copy():
+     The shutil.copy() is a function which is used to copy the file from source to the destination.
+     It takes two arguments, one is source path and the another one is destination path.
+ shutil.copytree():
+     The shutil.copytree() is a function which can be used to copy all the files form source directory to
+     the destination directory. It takes two arguments, one is source directory path and the another one is 
+     destination directory path.
+
+2. What function is used to rename files?
+ans:
+   To rename the file we use os.rename() function which takes two arguments where one is old file name 
+   and another one is new file name.
+
+3. What is the difference between the delete functions in the send2trash and shutil modules?
+ans:
+  "send2trash" sends the files or directories to the operating system's trash or recycle bin instead of permanently
+  deleting them. This means that if you delete something by mistake, you can usually still recover it from the trash.
+  But in case of, shutil deletes files and directories permanently.
+
+4.ZipFile objects have a close() method just like File objects’ close() method. What ZipFile method is
+equivalent to File objects’ open() method?
+ans:
+ The ZipFile method that is equivalent to File objects open() method is ZipFile() itself.
+
+5. Create a programme that searches a folder tree for files with a certain file extension (such as .pdf
+or .jpg). Copy these files from whatever location they are in to a new folder.
+ans:
+The below code will demonstrates the above function:
+
+#importing the libraries
+
+import os
+import shutil
+
+# specify the source directory to search for files
+source_directory = 'path/to/source/folder'
+
+# specify the destination directory to copy the files to
+destination_directory = 'path/to/destination/folder'
+
+# specify the file extension to search for
+file_extension = '.pdf'
+
+# iterate over all files in the source directory tree
+for root, dirs, files in os.walk(source_directory):
+    for file in files:
+        # check if the file has the desired file extension
+        if file.endswith(file_extension):
+            # construct the full path to the source file
+            source_file = os.path.join(root, file)
+            # construct the full path to the destination file
+            destination_file = os.path.join(destination_directory, file)
+            # copy the file to the destination directory
+            shutil.copy2(source_file, destination_file)

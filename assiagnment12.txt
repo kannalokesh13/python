@@ -1,108 +1,113 @@
-1. What is the function of a summation junction of a neuron? What is threshold activation
-function?
+1. In what modes should the PdfFileReader() and PdfFileWriter() File objects will be opened?
 ans:
- The summation Junction of a neuron consists of weighted sum pf previous layer and the actvation function applied to the result.
- The threshold activation function is used for binary classification, if value is greater than threshold, then it should be one otherwise
- it should be zero.
+ The PdfFileReader() is used to get the data in read only mode and the PdfFileWriter is used to 
+ modify or create new file data in write mode.
 
-2. What is a step function? What is the difference of step function with threshold function?
+2. From a PdfFileReader object, how do you get a Page object for page 5?
 ans:
- The step function is used to make any value between the zero and one. The activation function will be used to activate the neurons in the hidden layers
- The activation function will be used in ANN.
+ We can use the get page method to get the page number and it starts with index number '0'.
+ 
+ from PyPDF2 import PdfFileReader
+ 
+ with open('example.pdf', 'rb') as file:
+    
+    pdf_reader = PdfFileReader(file)
 
-3. Explain the McCulloch–Pitts model of neuron.
+    page_five = pdf_reader.getPage(4)
+
+3. What PdfFileReader variable stores the number of pages in the PDF document?
 ans:
- The McCulloch-Pitts neuron model consists of two main components: input connections and an output function. The input connections represent the inputs
- to the neuron, which are binary signals that can be either on or off. Each input is assigned a weight, which represents the strength of the input signal.
- The output function takes the weighted sum of the input signals and compares it to a threshold value. If the weighted sum is greater than or equal to the 
- threshold value, the neuron fires and produces an output signal; otherwise, it remains inactive and does not produce an output signal.
+  The PdfFileReader class provides a variable called numPages that stores the number of pages in 
+  the PDF document.
+  
+  from PyPDF2 import PdfFileReader
 
-4. Explain the ADALINE network model.
+  with open('example.pdf', 'rb') as file:
+ 
+      pdf_reader = PdfFileReader(file)
+
+      num_pages = pdf_reader.numPages
+
+  print(f'The PDF document has {num_pages} pages.')
+
+4. If a PdfFileReader objectâ€™s PDF is encrypted with the password swordfish, what must you do
+before you can obtain Page objects from it?
 ans:
- The ADALINE (Adaptive Linear Neuron) network model is a type of artificial neural network where it consists of  an input layer, a single output layer, 
- and a feedback loop that adjusts the network's weights based on the difference between the network's output and the desired output. The input layer consists
- of a set of input neurons, each of which receives an input signal and applies a weight to it. The output layer consists of a single output neuron, which 
- receives the weighted sum of the input signals and applies a linear activation function to produce the network's output.
+ You have to pass the password in the PdfFileReader() function along with the file name.
+ 
+ from PyPDF2 import PdfFileReader
 
-5. What is the constraint of a simple perceptron? Why it may fail with a real-world data set?
+ with open('example.pdf', 'rb') as file:
+ 
+      pdf_reader = PdfFileReader(file,'swordfish')
+
+      num_pages = pdf_reader.numPages
+
+5. What methods do you use to rotate a page?
 ans:
-  The perceptron contains only a single layer of nuerons and it will acts like a linear regression problem statement and the parametrs are very less
-  to train the data. So it only trains the data which is only linearly identified. So That's is the reaso behind where it fails with a real-world data set.
+ To rotate a page in a PDF document using PyPDF2, you can use the rotateClockwise() and 
+ rotateCounterClockwise() methods of a Page object.
 
-6. What is linearly inseparable problem? What is the role of the hidden layer?
+6. What is the difference between a Run object and a Paragraph object?
 ans:
-  The data which is not in a linear manner, it means it we cannot draw a best fit line on above data.
-  The role of the hidden layer in a neural network is to enable the network to learn nonlinear relationships between the inputs and outputs.
+Run object:
+ A Run object is a part of a Paragraph object and represents a contiguous run of text within a 
+ paragraph that has the same formatting. For example, if a paragraph contains the text "Hello, world!" where 
+ "Hello" is bold and "world!" is underlined, there would be two Run objects within the Paragraph object - one
+ for the bold text and one for the underlined text.
 
-7. Explain XOR problem in case of a simple perceptron.
+Paragraph Object:
+ A Paragraph object represents a single paragraph of text in a Word document. It contains properties such 
+ as the style, text content, and formatting information.
+
+ 7. How do you obtain a list of Paragraph objects for a Document object thatâ€™s stored in a variable
+named doc?
 ans:
- The XOR problem cannot be solved using a single perceptron, it can be solved by using the multilayer perceptron(MLP).
- Here, the inputs are x1 and x2 and the output is y1 and at the middle there is a new layer called hidden layer which process the outputs of x1 and x2.
- Then the network will predict the output.
+ If you have a document called 'doc', then you can use doc.paragraphs attribute to get the list of
+ paragraph objects.
+ 
+ from docx import Document
 
-8. Design a multi-layer perceptron to implement A XOR B.
+ doc = Document('my_document.docx')
+
+ paragraphs = doc.paragraphs
+ 
+8. What type of object has bold, underline, italic, strike, and outline variables?
 ans:
- The Multi-layer percptron to implement A XOR B is,
-   Input layer: Two input nodes for A and B.
+ The Paragraph Object has all the above features.
 
-   Hidden layer: Two nodes with sigmoid activation function.
-
-   Output layer: One node with sigmoid activation function.
-
-  By the above technique we will get the output/
-
-9. Explain the single-layer feed forward architecture of ANN.
+9. What is the difference between False, True, and None for the bold variable?
 ans:
- The Single-layer consists of input layer, one hidden layer and the output layer. The Input layer will be used to feed the input and the hidden layer 
- will responsible for processing of outputs by taking the inpus. The single-layer networks works like linear regression formula along with a bias.
- It randomly intializes the weights and proceeds further. It does not consists of back propagation to adjust their weights.
+ False means that the text is not bold.
+ True means that the text is bold.
+ None means that the bold property is not explicitly set for the Run object. 
+ In this case, the default behavior will depend on the style of the Run object's containing.
 
-10. Explain the competitive network architecture of ANN.
+10. How do you create a Document object for a new Word document?
 ans:
-  The competative network contains more than one hidden layers and contains a number of parameters that are going to be trained on the input data, and
-  after that it begins back propogation algorithm to adjust their weights to increase the performance.
+ First you have to create the object for the Document() class and you can use the methods inside that
+ class.
 
-11. Consider a multi-layer feed forward neural network. Enumerate and explain steps in the
-backpropagation algorithm used to train the network.
+ from docx import Document
+
+ doc = Document()
+
+ # Add a new paragraph to the document
+ doc.add_paragraph('This is a new paragraph.')
+
+ # Save the document to a file
+ doc.save('my_new_document.docx')
+
+11. How do you add a paragraph with the text 'Hello, there' to a Document object stored in a
+variable named doc?
 ans:
- It consists of a sequence of steps:
-   1.Initialize network weights
-   2.Forward pass
-   3.Compute error
-   4.Backward pass
-   5.Update weights
-   6.Repeat: Steps 2-5 are repeated for multiple epochs until the network converges to a set of weights that minimize the cost function. 
+ from docx import Document
 
-12. What are the advantages and disadvantages of neural networks?
-ans:
-  Advantages:
-     1.Neural networks can be used for a wide range of applications, including image and speech recognition, natural language processing, and prediction tasks.
-     2.They can learn complex relationships and patterns in data without being explicitly programmed.
-     3.They can handle noisy and incomplete data.
-     4.They can learn and generalize from examples.
-  Dis-Advantages:
-     1.They can be computationally expensive to train and require a lot of computational resources.
-     2.They can be difficult to interpret and explain their decision-making process.
-     3.Overfitting can occur if the model is too complex and is not regularized properly.
+ doc1 = Document('doc')
 
-13. Write short notes on any two of the following:
+ doc1.add_paragraph('Hello, there')
+ 
+ doc1.save('doc.docx')
 
-1. Biological neuron
+ 
 
-2. ReLU function
-ans:
-ReLU (Rectified Linear Unit) is a commonly used activation function in deep learning.
-f(x) = max(0, x)
-In other words, ReLU returns the input x if it is positive, and 0 otherwise. The main advantage of 
-using ReLU is that it is computationally efficient and easy to implement. Additionally, it has been shown to perform well in 
-many deep learning applications.
-
-3. Single-layer feed forward ANN
-
-4. Gradient descent
-ans:
-  Gradient Descent is an iterative optimization algorithm used in machine learning and deep learning to find the minimum value of a 
-  given function. The idea behind this algorithm is to iteratively adjust the parameters of a model in the direction of the negative gradient 
-  of the loss function with respect to the parameters, until the minimum is reached.
-
-5. Recurrent networks

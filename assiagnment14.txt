@@ -1,0 +1,44 @@
+1. What does RGBA stand for?
+ans:
+ The RGBA stands for Red, Green, Blue and Alpha,
+
+2. From the Pillow module, how do you get the RGBA value of any images?
+ans:
+  By using the getpixel() method, we can get the RGBA value of any images.
+
+3. What is a box tuple, and how does it work?
+ans:
+  In Pillow, a box tuple is a tuple of four integer values that represent the left, upper, right, and 
+  lower pixel coordinates of a rectangular box. The syntax is (left, upper, right, lower). 
+  For example, (0, 0, 100, 100) would represent a box that starts at pixel (0, 0) in the upper left 
+  corner of an image and ends at pixel (100, 100) in the lower right corner.
+  The box tuple is mainly used to crop the image.
+
+4. Use your image and load in notebook then, How can you find out the width and height of an
+Image object?
+ans:
+ from PIL import Image
+
+ img = Image.open('example.jpg')
+
+ width, height = img.size
+
+ print(width)
+ print(height)
+
+5. What method would you call to get Image object for a 100×100 image, excluding the lower-left
+quarter of it?
+ans:
+  To get an Image object for a 100×100 image, excluding the lower-left quarter of it, you can use 
+  the crop() method of the Image object.
+
+6. After making changes to an Image object, how could you save it as an image file?
+ans:
+ By using the save() method we can save an image.
+ For example, if i have the image object as im, then
+
+ im.save('image/path')
+
+7. What module contains Pillow’s shape-drawing code?
+ans:
+  The ImageDraw module contains Pillow's shape-drawing code.
