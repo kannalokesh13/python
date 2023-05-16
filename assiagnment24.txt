@@ -1,0 +1,41 @@
+1. What is the relationship between def statements and lambda expressions ?
+ans:
+   The syntax for defining a function using def statement is def function_name(parameters):, 
+   followed by the function body. On the other hand, a lambda expression is defined using the lambda 
+    keyword, followed by the parameters and a single expression: lambda parameters: expression.
+
+2. What is the benefit of lambda?
+ans:
+  Concise Syntax
+  Readability
+  Reduce Logic Length
+  Functional Programming
+
+3. Compare and contrast map, filter, and reduce.
+ans:
+   map:
+      Syntax: map(function, iterable)
+      Purpose: Applies a given function to each item in an iterable and returns an iterator containing the results.
+  filter:
+      Syntax: filter(function, iterable)
+      Purpose: Filters elements from an iterable based on a given function that returns a Boolean value (True or False).
+  reduce:
+      Syntax: reduce(function, iterable)
+      Purpose: Applies a rolling computation to the elements of an iterable, reducing it to a single value.
+
+4. What are function annotations, and how are they used?
+ans:
+    They provide a way to document the expected types and meanings of the function arguments and return values, although 
+    they do not enforce or restrict the actual types at runtime.
+
+5. What are recursive functions, and how are they used?
+ans:
+   A function calling itself again and agian is called as recursive functions.
+
+
+6. What are some general design guidelines for coding functions?
+ans:
+   Naming the function.
+   Passing the parameters.
+   using doc string inside the function.
+

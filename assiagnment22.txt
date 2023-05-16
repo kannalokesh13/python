@@ -1,0 +1,61 @@
+1. What is the result of the code, and explain?
+
+ X = 'iNeuron'
+def func():
+	print(X)
+
+func()
+
+ans:
+ it will print the 'iNeuron'.
+
+2. What is the result of the code, and explain?
+
+ X = &#39;iNeuron&#39;
+ def func():
+	X = 'NI'
+
+ func()
+ print(X)
+ans:
+  it will print the 'iNeuron'.
+
+3. What does this code print, and why?
+
+ X = &#39;iNeuron&#39;
+def func():
+	X = &#39;NI&#39;
+	print(X)
+
+func()
+print(X)
+ans:
+  it will print first 'NI' and next 'iNeuron' .
+
+4. What output does this code produce? Why?
+
+ X = &#39;iNeuron&#39;
+ def func():
+global X
+X = &#39;NI&#39;
+
+ func()
+ print(X)
+ans:
+  it will print the 'NI' .
+
+5. What about this code—what’s the output, and why?
+
+ X = &#39;iNeuron&#39;
+ def func():
+X = &#39;NI&#39;
+def nested():
+print(X)
+nested()
+
+ func()
+ X
+
+ans:
+  first it will print the "NI" and then "iNeuron" .
+
