@@ -1,0 +1,58 @@
+Q1. What is the relationship between classes and modules?
+ans:
+ Classes are used for creating objects and defining their behavior and attributes.
+ Modules are files containing Python code that can be imported and used in other Python programs.
+
+Q2. How do you make instances and classes?
+ans:
+  Its just like the below code:
+
+   class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def drive(self):
+        print("Driving the", self.color, self.brand, "car")
+
+# Step 2: Instantiate the class
+   my_car = Car("Toyota", "red")
+
+  print(my_car.brand) 
+  print(my_car.color)  
+  my_car.drive() 
+
+Q3. Where and how should be class attributes created?
+ans:
+  The class attributes are created inside the class and those can be used by creating the object of the class.
+
+Q4. Where and how are instance attributes created?
+ans:
+  Within a class we have a special method def __init__(self), in this method we create the instance 
+  attributes.
+
+Q5. What does the term &quot;self&quot; in a Python class mean?
+ans:
+   self is the keyword which can be used to initialize and operate the instace attributes.
+
+Q6. How does a Python class handle operator overloading?
+ans:
+ The python will uses the base class operators while operator overloading.
+
+Q7. When do you consider allowing operator overloading of your classes?
+ans:
+ we consider while performing the inheritance operation.
+
+Q8. What is the most popular form of operator overloading?
+ans:
+  
+The most popular form of operator overloading is the overloading of arithmetic operators, such as addition (+), 
+subtraction (-), multiplication (*), and division (/). These operators can be overloaded in classes to define custom 
+behavior for objects of that class when these operators are applied to them.
+
+Q9. What are the two most important concepts to grasp in order to comprehend Python OOP code?
+ans:
+ 1. Classes
+ 2. Objects
+ 3. Instances
+

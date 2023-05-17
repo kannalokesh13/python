@@ -1,0 +1,26 @@
+Q1. What are the two latest user-defined exception constraints in Python 3.X?
+ans:
+ BaseException as the base class: In Python 3.x, it is recommended to inherit user-defined exceptions from the BaseException class instead of the Exception class. 
+ This allows more control over exception handling and avoids catching system-exiting exceptions unintentionally.
+
+Q2. How are class-based exceptions that have been raised matched to handlers?
+ans:
+  When an exception is raised, Python searches for an exception handler that matches the type of the raised exception.
+  It starts by checking the nearest enclosing try statement and looks for an except clause that specifies the raised exception's type or a superclass of it.
+  If a matching except clause is found, the corresponding block of code is executed, and the exception is considered handled.
+  If the raised exception does not match any except clause within the current try statement, Python moves to the next outer try statement and repeats the process.
+
+Q3. Describe two methods for attaching context information to exception artefacts.
+ans:
+  1. Exception Chaining
+  2. Adding custom atributes.
+
+Q4. Describe two methods for specifying the text of an exception object&#39;s error message.
+ans:
+  1. Using the Exception class constructor
+  2. formatting the Error Message.
+
+Q5. Why do you no longer use string-based exceptions?
+ans:
+  Class-based exceptions provide better clarity and readability compared to string-based exceptions. By using exception classes, the type and nature of the exception 
+  are explicitly defined, making the code more understandable and maintainable.

@@ -1,0 +1,27 @@
+Q1. Describe three applications for exception processing.
+ans:
+  1. Error Handling
+  2. Custom Exception Exception Handling.
+
+Q2. What happens if you don&#39;t do something extra to treat an exception?
+ans:
+  If an exception is not handled or caught by the program, it will result in an unhandled exception, 
+  which can cause the program to terminate abruptly. When an unhandled exception occurs, the default behavior 
+  is for the Python interpreter to print a traceback message that includes information about the exception type, 
+  the line of code where the exception occurred, and the call stack.
+  EX:
+  Like Zero division Error.
+
+Q3. What are your options for recovering from an exception in your script?
+ans:
+  1. Catching and Handling the Exception
+  2. Logging the Exception.
+Q4. Describe two methods for triggering exceptions in your script.
+ans:
+  1. Raising an exception.
+  2. By default getting an exception when error encounters.
+
+Q5. Identify two methods for specifying actions to be executed at termination time, regardless of
+whether or not an exception exists.
+ans:
+ By using the Finally block we can execute what ever we want.

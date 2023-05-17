@@ -1,0 +1,31 @@
+1. What is the concept of an abstract superclass?
+ans:
+ The concept of an abstract superclass in object-oriented programming refers to a class that is designed to be inherited 
+ by other classes but cannot be instantiated itself. It serves as a blueprint or template for its subclasses, providing 
+ common attributes and behaviors that they can inherit and extend.
+
+2. What happens when a class statement&#39;s top level contains a basic assignment statement?
+ans:
+  When a class statement's top level contains a basic assignment statement, it creates a class variable. A class variable is 
+  a variable that is shared among all instances (objects) of the class. It belongs to the class itself rather than any specific 
+  instance.
+
+3. Why does a class need to manually call a superclass&#39;s __init__ method?
+ans:
+  A class needs to manually call a superclass's __init__ method to ensure that the initialization code of the superclass is executed. 
+  By calling the __init__ method of the superclass, the subclass can inherit and initialize the attributes and behavior defined in the 
+  superclass.
+
+4. How can you augment, instead of completely replacing, an inherited method?
+ans:
+  To augment, or extend, an inherited method instead of completely replacing it, you can override the method in the subclass and invoke 
+  the superclass's version of the method using the super() function. By doing so, you can add additional functionality to the method while 
+  still preserving the original behavior defined in the superclass.
+
+5. How is the local scope of a class different from that of a function?
+ans:
+  Function: The local scope of a function is primarily used to define and manipulate variables specific to that function. It is a temporary 
+  workspace where variables are created, assigned values, and used during the execution of the function.
+  Class: The local scope of a class is used to define and manipulate class attributes and methods. It serves as a namespace for variables and 
+  functions that are specific to the class. The class scope is responsible for defining the behavior and characteristics of the class and its 
+  instances.
