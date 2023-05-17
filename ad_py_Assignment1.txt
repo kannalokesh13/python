@@ -1,0 +1,49 @@
+Q1. What is the purpose of Python&#39;s OOP?
+ans:
+ OPP's stands for object oriented programming which defines the additional features along with modular coding
+ 1. abstraction.
+ 2. Inhertance
+ 3. Polymorphism
+
+Q2. Where does an inheritance search look for an attribute?
+ans:
+ An inhertace first looks for the Parent class, actually the inheritance provides the parent child relation.
+
+Q3. How do you distinguish between a class object and an instance object?
+ans:
+  A class object is the definition or the blueprint of a class.
+  Where as the An instance object is a specific occurrence or instantiation of a class..
+
+Q4. What makes the first argument in a class’s method function special?
+ans:
+  'self' is the first argument in a class used for the accesing and operating the instance variables.
+
+Q5. What is the purpose of the __init__ method?
+ans:
+ The __init__ method is the constructor for a class which is used for intializing the variables 
+ by default while creating the object for the class.
+
+Q6. What is the process for creating a class instance?
+ans:
+  Its just like the below code:
+
+   class Car:
+    def __init__(self, brand, color):
+        self.brand = brand
+        self.color = color
+
+    def drive(self):
+        print("Driving the", self.color, self.brand, "car")
+
+# Step 2: Instantiate the class
+   my_car = Car("Toyota", "red")
+
+  print(my_car.brand) 
+  print(my_car.color)  
+  my_car.drive() 
+
+Q8. How would you define the superclasses of a class?
+ans:
+  We can define the super class by inheriting all the properties of the class to the child class.
+  It will be possible with the concept of Inhertance.
+
